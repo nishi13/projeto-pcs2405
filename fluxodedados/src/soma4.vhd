@@ -4,11 +4,11 @@ use ieee.numeric_std.all;
 entity Soma4 is
 port(
 
-in2 : in signed(31 downto 0);
-sai : out signed(31 downto 0)
+entra : in std_logic_vector(31 downto 0);
+sai : out std_logic_vector(31 downto 0)
 );
 end Soma4;
 architecture Soma4 of Soma4 is
 begin
-sai <= 100 + in2;
+sai <= std_logic_vector(unsigned(entra)+4);
 end Soma4;

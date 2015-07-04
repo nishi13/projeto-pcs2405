@@ -4,9 +4,9 @@ use ieee.numeric_std.all;
 entity Mxpc is
 port(
 spc : in STD_LOGIC;
-in1 : in signed(31 downto 0);
-in2 : in signed(31 downto 0);
-out3 : out signed(31 downto 0)
+in1 : in std_logic_vector(31 downto 0);
+in2 : in std_logic_vector(31 downto 0);
+out3 : out std_logic_vector(31 downto 0)
 );
 end Mxpc;
 architecture Mxpc of Mxpc is

@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 entity PC is
 port(
 cPC : in STD_LOGIC;
-PCin : in signed(31 downto 0);
-PCout : out signed(31 downto 0)
+PCin : in std_logic_vector(31 downto 0);
+PCout : out std_logic_vector(31 downto 0)
 );
 end PC;
 architecture PC of PC is
