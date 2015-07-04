@@ -1,0 +1,147 @@
+acom -O3 -work fluxodedados -2002  $dsn/src/if.bde
+# Compile...
+# DRC: Checking file 'c:\My_Designs\fluxodedados\fluxodedados\src\if.bde'.
+# DRC: Warning: if.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\fluxodedados\fluxodedados\compile\if.vhd from c:\My_Designs\fluxodedados\fluxodedados\src\if.bde ... 
+# Generation successful 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\if.vhd
+# Compile Entity "\IF\"
+# Compile Architecture "\IF\" of Entity "\IF\"
+# Error: COMP96_0617: if.bde(if.vhd) : (118, 15): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'SIGNED'.
+# Error: COMP96_0617: if.bde(if.vhd) : (121, 11): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work fluxodedados -2002  $dsn/src/soma4.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\fluxodedados\fluxodedados\src\soma4.vhd
+# Compile Entity "Soma4"
+# Error: COMP96_0018: soma4.vhd : (6, 7): Identifier expected.
+# Error: COMP96_0015: soma4.vhd : (6, 7): ')' expected.
+# Error: COMP96_0015: soma4.vhd : (6, 7): ';' expected.
+# Error: COMP96_0019: soma4.vhd : (6, 16): Keyword 'end' expected.
+# Error: COMP96_0015: soma4.vhd : (6, 16): ';' expected.
+# Error: COMP96_0016: soma4.vhd : (6, 19): Design unit declaration expected.
+# Compile Architecture "Soma4" of Entity "Soma4"
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.9 [s]
+acom -O3 -work fluxodedados -2002  $dsn/src/soma4.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\fluxodedados\fluxodedados\src\soma4.vhd
+# Compile Entity "Soma4"
+# Error: COMP96_0028: soma4.vhd : (6, 1): Identifier or keyword expected.
+# Error: COMP96_0015: soma4.vhd : (6, 1): ';' expected.
+# Error: COMP96_0019: soma4.vhd : (6, 2): Keyword 'end' expected.
+# Error: COMP96_0015: soma4.vhd : (6, 2): ';' expected.
+# Error: COMP96_0016: soma4.vhd : (6, 3): Design unit declaration expected.
+# Compile Architecture "Soma4" of Entity "Soma4"
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -O3 -work fluxodedados -2002  $dsn/src/soma4.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\fluxodedados\fluxodedados\src\soma4.vhd
+# Compile Entity "Soma4"
+# Compile Architecture "Soma4" of Entity "Soma4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# if: Updating instances of symbol 'Soma4' from library 'fluxodedados' (U3)
+# Compile...
+# DRC: Checking file 'c:\My_Designs\fluxodedados\fluxodedados\src\if.bde'.
+# DRC: Warning: if.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\fluxodedados\fluxodedados\compile\if.vhd from c:\My_Designs\fluxodedados\fluxodedados\src\if.bde ... 
+# Generation successful 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\if.vhd
+# Compile Entity "\IF\"
+# Compile Architecture "\IF\" of Entity "\IF\"
+# Error: COMP96_0617: if.bde(if.vhd) : (115, 15): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'SIGNED'.
+# Error: COMP96_0617: if.bde(if.vhd) : (118, 11): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# fluxo_dados: Updating instances of symbol '\IF\' from library 'fluxodedados' (U1)
+acom -O3 -work fluxodedados -2002  $dsn/src/if.bde
+# Compile...
+# DRC: Checking file 'c:\My_Designs\fluxodedados\fluxodedados\src\if.bde'.
+# DRC: if.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\fluxodedados\fluxodedados\compile\if.vhd from c:\My_Designs\fluxodedados\fluxodedados\src\if.bde ... 
+# Generation successful 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\if.vhd
+# Compile Entity "\IF\"
+# Compile Architecture "\IF\" of Entity "\IF\"
+# Error: COMP96_0617: if.bde(if.vhd) : (115, 15): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'SIGNED'.
+# Error: COMP96_0617: if.bde(if.vhd) : (118, 11): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# fluxo_dados: Updating instances of symbol '\IF\' from library 'fluxodedados' (U1)
+acom -O3 -work fluxodedados -2002  $dsn/src/if.bde
+# Compile...
+# DRC: Checking file 'c:\My_Designs\fluxodedados\fluxodedados\src\if.bde'.
+# DRC: if.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\fluxodedados\fluxodedados\compile\if.vhd from c:\My_Designs\fluxodedados\fluxodedados\src\if.bde ... 
+# Generation successful 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\if.vhd
+# Compile Entity "\IF\"
+# Compile Architecture "\IF\" of Entity "\IF\"
+# Error: COMP96_0617: if.bde(if.vhd) : (115, 15): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'SIGNED'.
+# Error: COMP96_0617: if.bde(if.vhd) : (118, 11): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work fluxodedados -2002  $dsn/src/fluxo_dados.bde
+# Compile...
+# DRC: Checking file 'c:\My_Designs\fluxodedados\fluxodedados\src\fluxo_dados.bde'.
+# DRC: Error: fluxo_dados.bde - 1 error(s), 15 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Compile...
+# DRC: Checking file 'c:\My_Designs\fluxodedados\fluxodedados\src\wb.bde'.
+# DRC: Warning: wb.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\fluxodedados\fluxodedados\compile\wb.vhd from c:\My_Designs\fluxodedados\fluxodedados\src\wb.bde ... 
+# Generation successful 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\wb.vhd
+# Compile Entity "WB"
+# Compile Architecture "WB" of Entity "WB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# fluxo_dados: Updating instances of symbol 'WB' from library 'fluxodedados' (U2)
+acom -O3 -work fluxodedados -2002  $dsn/src/cacheI.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\fluxodedados\fluxodedados\src\cacheI.vhd
+# Compile Entity "Cache_I"
+# Compile Architecture "Cache_I" of Entity "Cache_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]
+acom -O3 -work fluxodedados -2002  $dsn/src/cacheD.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\fluxodedados\fluxodedados\src\cacheD.vhd
+# Compile Entity "Cache_D"
+# Compile Architecture "Cache_D" of Entity "Cache_D"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -O3 -work fluxodedados -2002  $dsn/src/memoriaprincipal.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\fluxodedados\fluxodedados\src\memoriaprincipal.vhd
+# Compile Entity "memPrim"
+# Compile Architecture "memPrim" of Entity "memPrim"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -O3 -work fluxodedados -2002  $dsn/src/memoriaprincipal.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\fluxodedados\fluxodedados\src\memoriaprincipal.vhd
+# Compile Entity "memPrim"
+# Compile Architecture "memPrim" of Entity "memPrim"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -work fluxodedados -2002  $dsn/src/fluxo_dados.bde
+# Compile...
+# DRC: Checking file 'c:\My_Designs\fluxodedados\fluxodedados\src\fluxo_dados.bde'.
+# DRC: Error: fluxo_dados.bde - 1 error(s), 31 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.

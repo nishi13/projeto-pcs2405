@@ -1,0 +1,22 @@
+.\src\mux5bits.bde
+.\..\..\..\users\asua\documents\poli\setimo semestre\arquitetura\fwdarquivosarquitetura\m_wb.vhd
+.\src\icache.vhd
+.\src\pc.vhd
+.\src\wb.bde
+.\src\mem.bde
+.\src\ex_m.vhd
+.\src\ri.vhd
+.\src\uc1.vhd
+.\src\soma4.vhd
+.\src\fluxo_dados.bde
+.\src\ex.bde
+.\src\id.bde
+.\src\mxpc.vhd
+.\src\if.bde
+.\src\ID_EX.vhd
+.\src\GREG.vhd
+.\src\exe2.vhd
+.\src\mem2.bde
+.\src\cacheI.vhd
+.\src\cacheD.vhd
+.\src\memoriaprincipal.vhd

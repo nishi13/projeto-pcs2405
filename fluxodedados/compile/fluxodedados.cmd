@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\fluxodedados\library.cfg"  -j "c:\My_Designs\fluxodedados\fluxodedados\projlib.cfg"  -d "c:\My_Designs\fluxodedados\fluxodedados\compile"   -work fluxodedados  -O3 -e 100

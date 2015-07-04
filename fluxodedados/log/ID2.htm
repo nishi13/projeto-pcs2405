@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>DRC Report File - ID2.bde</TITLE>
+<STYLE>
+.Err	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.Warn	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.Info	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Sccss  {color:'#009600';cursor:hand;text-decoration:underline;}
+.ErrH	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.WarnH	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.InfoH	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Err1	{color:'#FF0000';}
+.Warn1	{color:'#0000FF';}
+.Info1	{color:'#000000';}
+.Sccss1 {color:'#009600';}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" BACKGROUND="C:\Aldec\Active-HDL Student Edition\\Flows\Res\default.bmp">
+<FONT FACE="Serif">
+<tt>
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>DRC Report File - ID2.bde</H2>
+
+Created on Mon 2015-06-01 at 20:14:25
+<HR NOSHADE COLOR="#008080">
+<SPAN class=Info1>Checking file 'C:\My_Designs\fluxodedados\fluxodedados\src\ID2.bde'.</SPAN><BR>
+<SPAN class=Info1>The following differences between symbols and their contents have been found:</SPAN><BR>
+<SPAN class=Warn onclick="OpenPlugIn('Aldec.BDE.7','0','C:\\My_Designs\\fluxodedados\\fluxodedados\\src\\ID2.bde','','-errorid=357');">symbol 'xsign': port 'i' differs in range.</SPAN><BR>
+<SPAN class=Warn onclick="OpenPlugIn('Aldec.BDE.7','0','C:\\My_Designs\\fluxodedados\\fluxodedados\\src\\ID2.bde','','-errorid=357');">symbol 'xsign': port 'o' differs in range.</SPAN><BR>
+<SPAN class=Info1>To settle inconsistencies between symbols and their contents apply the Compare Symbol with Contents command to each of the reported symbols.</SPAN><BR>
+<SPAN class=Warn onclick="OpenPlugIn('Aldec.BDE.7','0','C:\\My_Designs\\fluxodedados\\fluxodedados\\src\\ID2.bde','','-errorid=199,191');">Different index ranges 'RIout(52:48), RIout(63:0)' in a bus node.</SPAN><BR>
+<SPAN class=Warn1>ID2.bde - 0 error(s), 3 warning(s)</SPAN><BR>
+<SPAN class=Info1>DRC process completed in 2 second(s).</SPAN><BR>
+</tt>
+</FONT>
+       
+        >
+<FONT FACE="Serif">
+<tt>
+<BR><BR>
+<HR NOSHADE COLOR="#008080"><H3>Conversion Functions Log</H3>
+Generation process begin...<br><br>
+<span class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\My_Designs\\fluxodedados\\fluxodedados\\src\\ID2.bde','','-errorid=295');">Type conflict on instance 'U3':'UC1' at pin 'contin(7:0)'.</span><br>
+<dd>
+Function 'signed' used.<br>
+<span class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\My_Designs\\fluxodedados\\fluxodedados\\src\\ID2.bde','','-errorid=269');">Type conflict on instance 'U4':'ID_EX' at pin 'rt(4:0)'.</span><br>
+<dd>
+Prototype of this function already exists.<br>
+<dd>
+Function 'signed' used.<br>
+<span class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\My_Designs\\fluxodedados\\fluxodedados\\src\\ID2.bde','','-errorid=269');">In instance 'U4':'ID_EX' at pin 'regb(31:0)' function signed() added.</span><br>
+<dd>
+Prototype of this function already exists.<br>
+<dd>
+Function 'signed' used.<br>
+<span class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\My_Designs\\fluxodedados\\fluxodedados\\src\\ID2.bde','','-errorid=269');">In instance 'U4':'ID_EX' at pin 'sext(31:0)' function signed() added.</span><br>
+<dd>
+Prototype of this function already exists.<br>
+<dd>
+Function 'signed' used.<br>
+<span class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\My_Designs\\fluxodedados\\fluxodedados\\src\\ID2.bde','','-errorid=269');">In instance 'U4':'ID_EX' at pin 'rega(31:0)' function signed() added.</span><br>
+<dd>
+Prototype of this function already exists.<br>
+<dd>
+Function 'signed' used.<br>
+<span class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\My_Designs\\fluxodedados\\fluxodedados\\src\\ID2.bde','','-errorid=269');">Type conflict on instance 'U4':'ID_EX' at pin 'r1(4:0)'.</span><br>
+<dd>
+Prototype of this function already exists.<br>
+<dd>
+Function 'signed' used.<br>
+<span class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','C:\\My_Designs\\fluxodedados\\fluxodedados\\src\\ID2.bde','','-errorid=269');">Type conflict on instance 'U4':'ID_EX' at pin 'NPC(31:0)'.</span><br>
+<dd>
+Prototype of this function already exists.<br>
+<dd>
+Function 'signed' used.<br>
+<br>
+Generation process end.<br>
+Conversion functions added: 7<br>
+</tt>
+</FONT>
+</BODY>
+</HTML>
