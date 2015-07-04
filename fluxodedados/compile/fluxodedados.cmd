@@ -1,1 +1,0 @@
--w -s "F:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\library.cfg"  -j "F:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\fluxodedados\projlib.cfg"  -d "F:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\fluxodedados\compile"   -work fluxodedados  -O3 -e 100 -2002 "F:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\fluxodedados\compile\ex.vhd"
