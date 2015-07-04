@@ -1,2 +1,2 @@
-fluxodedados/*
-!fluxodedados/srv
+/fluxodedados/*
+!/fluxodedados/srv
