@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : C:\My_Designs\fluxodedados\fluxodedados\compile\id.vhd
--- Generated   : Mon Jun  1 20:46:33 2015
--- From        : C:\My_Designs\fluxodedados\fluxodedados\src\id.bde
+-- File        : f:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\fluxodedados\compile\id.vhd
+-- Generated   : Sat Jul  4 12:02:10 2015
+-- From        : f:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\fluxodedados\src\id.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -41,6 +41,9 @@ entity ID is
 end ID;
 
 architecture ID of ID is
+
+use ieee.std_logic_arith.all;
+
 
 ---- Component declarations -----
 
@@ -122,8 +125,8 @@ U1 : GREG
        clk => ClkGREG,
        endW => enderw,
        rw => rw,
-       dataA => dataA,
-       dataB => dataB
+       signed(dataA) => dataA( 31 downto 0 ),
+       signed(dataB) => dataB( 31 downto 0 )
   );
 
 U3 : UC1
@@ -137,10 +140,10 @@ U3 : UC1
 U4 : ID_EX
   port map(
        NPC => signed(RIout( 31 downto 0 )),
-       ID_EXout => ID_EXout,
-       cEXo => cEXo,
-       cMo => cMo,
-       cWBo => cWBo,
+       aldec_sig2slv(ID_EXout) => ID_EXout( 137 downto 0 ),
+       aldec_sig2slv(cEXo) => cEXo( 3 downto 0 ),
+       aldec_sig2slv(cMo) => cMo( 2 downto 0 ),
+       aldec_sig2slv(cWBo) => cWBo( 1 downto 0 ),
        cEX => BUS1768,
        cM => BUS1771,
        cWB => BUS1770,

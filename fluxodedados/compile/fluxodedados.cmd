@@ -1,1 +1,1 @@
--w -s "c:\My_Designs\fluxodedados\library.cfg"  -j "c:\My_Designs\fluxodedados\fluxodedados\projlib.cfg"  -d "c:\My_Designs\fluxodedados\fluxodedados\compile"   -work fluxodedados  -O3 -e 100
+-w -s "F:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\library.cfg"  -j "F:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\fluxodedados\projlib.cfg"  -d "F:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\fluxodedados\compile"   -work fluxodedados  -O3 -e 100 -2002 "F:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\fluxodedados\compile\ex.vhd"

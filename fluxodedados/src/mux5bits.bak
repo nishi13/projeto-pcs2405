@@ -2,7 +2,7 @@ SCHM0104
 
 HEADER
 {
- FREEID 18
+ FREEID 80
  VARIABLES
  {
   #ARCHITECTURE="mux5bits"
@@ -29,6 +29,259 @@ PAGE ""
  
  BODY
  {
+  PROCESS  18, 0, 0
+  {
+   LABEL "Mux"
+   TEXT 
+"Mux :\n"+
+"process (I0, I1, S)\n"+
+"-- Section above this comment may be overwritten according to\n"+
+"-- \"Update sensitivity list automatically\" option status\n"+
+"variable Delay: time := 0 ns;\n"+
+"begin\n"+
+"\tIf (S'event) then \n"+
+"\t\tDelay := Tsel;\n"+
+"\telse\n"+
+"\t\tDelay := Tdata;\n"+
+"\tend if;\n"+
+"\tcase S is\n"+
+"\t\twhen '0' \t=> O <= I0 \t\t\t\tafter Delay;\n"+
+"\t\twhen '1' \t=> O <= I1 \t\t\t\tafter Delay;\n"+
+"\t\twhen others => O <= (others => 'X') after Delay;\n"+
+"\tend case;\n"+
+"end process Mux;"
+   RECT (810,500,1050,820)
+   ALIGN 5
+   MARGINS (20,20)
+   FONT (12,0,0,700,0,0,0,"Arial")
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   CORNER 10
+   VTX (  50, 52, 56, 53 )
+   VARIABLES
+   {
+    #DIRECTION_LIST="50 52 56 "
+   }
+   LIST (  50, 52, 56 )
+  }
+  NET BUS  25, 0, 0
+  INSTANCE  26, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #DECLARATION="(NumeroBits - 1:0)"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="I0(NumeroBits - 1:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (620,560)
+   ORIENTATION 3
+   VERTEXES ( (2,49) )
+  }
+  NET BUS  30, 0, 0
+  INSTANCE  31, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #DECLARATION="(NumeroBits - 1:0)"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="I1(NumeroBits - 1:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (620,720)
+   ORIENTATION 3
+   VERTEXES ( (2,51) )
+  }
+  NET BUS  33, 0, 0
+  INSTANCE  35, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #DECLARATION="(NumeroBits - 1:0)"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="O(NumeroBits - 1:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1240,660)
+   VERTEXES ( (2,54) )
+  }
+  NET WIRE  38, 0, 0
+  INSTANCE  39, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="S"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (620,860)
+   ORIENTATION 3
+   VERTEXES ( (2,55) )
+  }
+  TEXT  42, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (301,541,565,576)
+   ALIGN 10
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 26
+   ORIENTATION 3
+  }
+  TEXT  43, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1295,644,1559,679)
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 35
+  }
+  TEXT  44, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (301,701,565,736)
+   ALIGN 10
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 31
+   ORIENTATION 3
+  }
+  TEXT  45, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (544,841,565,876)
+   ALIGN 10
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 39
+   ORIENTATION 3
+  }
+  GENERIC  46, 0, 0
+  {
+   LABEL "Generic"
+   TEXT 
+"NumeroBits : integer := 5;\n"+
+""
+   RECT (1240,320,1740,393)
+   OUTLINE 5,1, (0,0,0)
+   FILL (0,(255,219,179),0)
+   MARGINS (20,20)
+   FONT (12,0,0,400,0,0,0,"Arial")
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  GENERIC  47, 0, 0
+  {
+   LABEL "Generic_1"
+   TEXT 
+"Tsel : time := 2 ns;\n"+
+""
+   RECT (400,320,780,400)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  GENERIC  48, 0, 0
+  {
+   LABEL "Generic_2"
+   TEXT 
+"Tdata : time := 1 ns;\n"+
+""
+   RECT (820,320,1200,400)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  VTX  49, 0, 0
+  {
+   COORD (620,560)
+  }
+  VTX  50, 0, 0
+  {
+   COORD (810,560)
+  }
+  VTX  51, 0, 0
+  {
+   COORD (620,720)
+  }
+  VTX  52, 0, 0
+  {
+   COORD (810,720)
+  }
+  VTX  53, 0, 0
+  {
+   COORD (1050,660)
+  }
+  VTX  54, 0, 0
+  {
+   COORD (1240,660)
+  }
+  VTX  55, 0, 0
+  {
+   COORD (620,860)
+  }
+  VTX  56, 0, 0
+  {
+   COORD (920,820)
+  }
+  BUS  57, 0, 0
+  {
+   NET 25
+   VTX 49, 50
+  }
+  BUS  58, 0, 0
+  {
+   NET 30
+   VTX 51, 52
+  }
+  BUS  59, 0, 0
+  {
+   NET 33
+   VTX 53, 54
+  }
+  VTX  60, 0, 0
+  {
+   COORD (920,860)
+  }
+  WIRE  61, 0, 0
+  {
+   NET 38
+   VTX 55, 60
+  }
+  WIRE  62, 0, 0
+  {
+   NET 38
+   VTX 60, 56
+  }
  }
  
 }
@@ -54,7 +307,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  1, 0, 0
+  TEXT  63, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -65,7 +318,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  2, 0, 0
+  TEXT  64, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -76,7 +329,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  3, 0, 0
+  TEXT  65, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -86,7 +339,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  4, 0, 0
+  TEXT  66, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -98,7 +351,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  5, 0, 0
+  TEXT  67, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -111,7 +364,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  6, 0, 0
+  TEXT  68, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -121,7 +374,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  7, 0, 0
+  TEXT  69, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -133,7 +386,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  8, 0, 0
+  TEXT  70, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -143,7 +396,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  9, 0, 0
+  TEXT  71, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -154,7 +407,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  10, 0, 0
+  GROUP  72, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -166,7 +419,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  11, 0, 0
+  GROUP  73, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -178,7 +431,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  12, 0, 0
+  GROUP  74, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -190,7 +443,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  13, 0, 0
+  GROUP  75, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -202,7 +455,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  14, 0, 0
+  GROUP  76, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -214,7 +467,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  15, 0, 0
+  GROUP  77, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -225,7 +478,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  16, 0, 0
+  GROUP  78, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -236,7 +489,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  17, 0, 0
+  BMPPICT  79, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)

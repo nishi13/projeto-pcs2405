@@ -1,5 +1,4 @@
 .\src\mux5bits.bde
-.\..\..\..\users\asua\documents\poli\setimo semestre\arquitetura\fwdarquivosarquitetura\m_wb.vhd
 .\src\icache.vhd
 .\src\pc.vhd
 .\src\wb.bde
@@ -20,3 +19,6 @@
 .\src\cacheI.vhd
 .\src\cacheD.vhd
 .\src\memoriaprincipal.vhd
+.\src\mwb4.vhd
+.\src\membw5.vhd
+.\src\dmem2.vhd

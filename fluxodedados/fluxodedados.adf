@@ -25,6 +25,7 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+fileopenfolder=F:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\fluxodedados\src
 
 [LocalVerilogSets]
 EnableSLP=1
@@ -46,40 +47,6 @@ HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
-[Files.Data]
-.\src\mux5bits.bde=Block Diagram
-.\..\..\..\users\asua\documents\poli\setimo semestre\arquitetura\fwdarquivosarquitetura\m_wb.vhd=VHDL Source Code
-.\src\src.zip=External File
-.\src\icache.vhd=VHDL Source Code
-.\src\ex.bak=External File
-.\src\pc.vhd=VHDL Source Code
-.\src\mem.bak=External File
-.\src\wb.bde=Block Diagram
-.\src\id.bak=External File
-.\src\mem.bde=Block Diagram
-.\src\ex_m.vhd=VHDL Source Code
-.\src\wb.bak=External File
-.\src\fluxo_dados.bak=External File
-.\..\..\..\users\asua\documents\poli\setimo semestre\arquitetura\fwdarquivosarquitetura\mux5bits.bak=External File
-.\src\ri.vhd=VHDL Source Code
-.\src\if.bak=External File
-.\src\uc1.vhd=VHDL Source Code
-.\src\soma4.vhd=VHDL Source Code
-.\src\ex.bde=Block Diagram
-.\src\id.bde=Block Diagram
-.\src\fluxo_dados.bde=Block Diagram
-.\src\mxpc.vhd=VHDL Source Code
-.\src\if.bde=Block Diagram
-.\src\ID_EX.vhd=VHDL Source Code
-.\src\GREG.vhd=VHDL Source Code
-.\src\exe2.vhd=VHDL Source Code
-.\src\mem2.bde=Block Diagram
-.\src\cacheI.vhd=VHDL Source Code
-.\src\cacheD.vhd=VHDL Source Code
-.\src\memoriaprincipal.vhd=VHDL Source Code
-
-[file_out:/mux5bits.bde]
-/..\compile\mux5bits.vhd=-1
 
 
 
@@ -90,11 +57,10 @@ Selected=
 
 [Files]
 /mux5bits.bde=-1
-/..\..\..\..\users\asua\documents\poli\setimo semestre\arquitetura\fwdarquivosarquitetura\m_wb.vhd=-1
 /src.zip=-1
 /icache.vhd=-1
-/ex.bak=-1
 /pc.vhd=-1
+/ex.bak=-1
 /mem.bak=-1
 /wb.bde=-1
 /id.bak=-1
@@ -116,21 +82,61 @@ Selected=
 /GREG.vhd=-1
 /exe2.vhd=-1
 /mem2.bde=-1
-
 /cacheI.vhd=-1
 /cacheD.vhd=-1
 /memoriaprincipal.vhd=-1
-[file_out:/ex.bde]
-/..\compile\ex.vhd=-1
-[file_out:/mem.bde]
-/..\compile\mem.vhd=-1
+/mwb4.vhd=-1
+/membw5.vhd=-1
+/dmem2.vhd=-1
+
+[Files.Data]
+.\src\mux5bits.bde=Block Diagram
+.\src\src.zip=External File
+.\src\icache.vhd=VHDL Source Code
+.\src\pc.vhd=VHDL Source Code
+.\src\ex.bak=External File
+.\src\mem.bak=External File
+.\src\wb.bde=Block Diagram
+.\src\id.bak=External File
+.\src\mem.bde=Block Diagram
+.\src\ex_m.vhd=VHDL Source Code
+.\src\wb.bak=External File
+.\src\fluxo_dados.bak=External File
+.\..\..\..\users\asua\documents\poli\setimo semestre\arquitetura\fwdarquivosarquitetura\mux5bits.bak=External File
+.\src\ri.vhd=VHDL Source Code
+.\src\if.bak=External File
+.\src\uc1.vhd=VHDL Source Code
+.\src\soma4.vhd=VHDL Source Code
+.\src\fluxo_dados.bde=Block Diagram
+.\src\ex.bde=Block Diagram
+.\src\id.bde=Block Diagram
+.\src\mxpc.vhd=VHDL Source Code
+.\src\if.bde=Block Diagram
+.\src\ID_EX.vhd=VHDL Source Code
+.\src\GREG.vhd=VHDL Source Code
+.\src\exe2.vhd=VHDL Source Code
+.\src\mem2.bde=Block Diagram
+.\src\cacheI.vhd=VHDL Source Code
+.\src\cacheD.vhd=VHDL Source Code
+.\src\memoriaprincipal.vhd=VHDL Source Code
+.\src\mwb4.vhd=VHDL Source Code
+.\src\membw5.vhd=VHDL Source Code
+.\src\dmem2.vhd=VHDL Source Code
+.\compile\ex.vhd=VHDL Source Code
+
 [file_out:/fluxo_dados.bde]
 /..\compile\fluxo_dados.vhd=-1
 [file_out:/mem2.bde]
 /..\compile\mem2.vhd=-1
+[file_out:/mux5bits.bde]
+/..\compile\mux5bits.vhd=-1
+[file_out:/wb.bde]
+/..\compile\wb.vhd=-1
+[file_out:/mem.bde]
+/..\compile\mem.vhd=-1
 [file_out:/if.bde]
 /..\compile\if.vhd=-1
 [file_out:/id.bde]
 /..\compile\id.vhd=-1
-[file_out:/wb.bde]
-/..\compile\wb.vhd=-1
+[file_out:/ex.bde]
+/..\compile\ex.vhd=-1

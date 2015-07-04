@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : C:\My_Designs\fluxodedados\fluxodedados\compile\mem2.vhd
--- Generated   : Mon Jun  1 21:46:12 2015
--- From        : C:\My_Designs\fluxodedados\fluxodedados\src\mem2.bde
+-- File        : F:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\fluxodedados\compile\mem2.vhd
+-- Generated   : Sat Jul  4 15:07:22 2015
+-- From        : F:\POLI\SETIMO SEMESTRE\arquitetura\projeto-pcs2405\fluxodedados\src\mem2.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -29,20 +29,19 @@ entity mem2 is
   port(
        Zero : in STD_LOGIC;
        ckM_WB : in STD_LOGIC;
-       clk : in STD_LOGIC;
        EX_Mo : in STD_LOGIC_VECTOR(100 downto 0);
-       PCin : in STD_LOGIC_VECTOR(31 downto 0);
        cMo : in STD_LOGIC_VECTOR(2 downto 0);
-       cWBc : in STD_LOGIC_VECTOR(1 downto 0);
+       cWBc : in SIGNED(1 downto 0);
        pcsrc : out STD_LOGIC;
-       M_WBo : out STD_LOGIC_VECTOR(68 downto 0);
+       M_WBo : out SIGNED(68 downto 0);
        NPCJ : out STD_LOGIC_VECTOR(31 downto 0);
-       PCout : out STD_LOGIC_VECTOR(31 downto 0);
-       cWBo : out STD_LOGIC_VECTOR(1 downto 0)
+       cWBo : out SIGNED(1 downto 0)
   );
 end mem2;
 
 architecture mem2 of mem2 is
+
+use ieee.std_logic_arith.all;
 
 ---- Component declarations -----
 
@@ -56,32 +55,21 @@ component DMEM
        datao : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
-component M_WB
+component M_WB3
   port (
-       PCin : in STD_LOGIC_VECTOR(31 downto 0);
-       cWBc : in STD_LOGIC_VECTOR(2 downto 0);
+       cWBo : in SIGNED(1 downto 0);
        ckM_WB : in STD_LOGIC;
-       dmout : in STD_LOGIC_VECTOR(31 downto 0);
-       endw : in STD_LOGIC_VECTOR(4 downto 0);
-       regout : in STD_LOGIC_VECTOR(31 downto 0);
-       M_WBo : out STD_LOGIC_VECTOR(68 downto 0);
-       PCout : out STD_LOGIC_VECTOR(31 downto 0);
-       cWBo : out STD_LOGIC_VECTOR(2 downto 0)
+       dmout : in SIGNED(31 downto 0);
+       endw : in SIGNED(4 downto 0);
+       regout : in SIGNED(31 downto 0);
+       M_WBo : out SIGNED(68 downto 0);
+       cWBo1 : out SIGNED(1 downto 0)
   );
 end component;
 
-----     Constants     -----
-constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
-
 ---- Signal declarations used on the diagram ----
 
-signal BUS60 : STD_LOGIC_VECTOR (31 downto 0);
-
----- Declaration for Dangling input ----
-signal Dangling_Input_Signal : STD_LOGIC;
-
----- Declarations for Dangling outputs ----
-signal DANGLING_U2_cWBo_0 : STD_LOGIC;
+signal BUS450 : STD_LOGIC_VECTOR (31 downto 0);
 
 begin
 
@@ -89,38 +77,38 @@ begin
 
 U1 : DMEM
   port map(
-       dataw(0) => Ex_Mo(64),
-       dataw(1) => Ex_Mo(65),
-       dataw(2) => Ex_Mo(66),
-       dataw(3) => Ex_Mo(67),
-       dataw(4) => Ex_Mo(68),
-       dataw(5) => Ex_Mo(69),
-       dataw(6) => Ex_Mo(70),
-       dataw(7) => Ex_Mo(71),
-       dataw(8) => Ex_Mo(72),
-       dataw(9) => Ex_Mo(73),
-       dataw(10) => Ex_Mo(74),
-       dataw(11) => Ex_Mo(75),
-       dataw(12) => Ex_Mo(76),
-       dataw(13) => Ex_Mo(77),
-       dataw(14) => Ex_Mo(78),
-       dataw(15) => Ex_Mo(79),
-       dataw(16) => Ex_Mo(80),
-       dataw(17) => Ex_Mo(81),
-       dataw(18) => Ex_Mo(82),
-       dataw(19) => Ex_Mo(83),
-       dataw(20) => Ex_Mo(84),
-       dataw(21) => Ex_Mo(85),
-       dataw(22) => Ex_Mo(86),
-       dataw(23) => Ex_Mo(87),
-       dataw(24) => Ex_Mo(88),
-       dataw(25) => Ex_Mo(89),
-       dataw(26) => Ex_Mo(90),
-       dataw(27) => Ex_Mo(91),
-       dataw(28) => Ex_Mo(92),
-       dataw(29) => Ex_Mo(93),
-       dataw(30) => Ex_Mo(94),
-       dataw(31) => Ex_Mo(95),
+       dataw(0) => EX_Mo(64),
+       dataw(1) => EX_Mo(65),
+       dataw(2) => EX_Mo(66),
+       dataw(3) => EX_Mo(67),
+       dataw(4) => EX_Mo(68),
+       dataw(5) => EX_Mo(69),
+       dataw(6) => EX_Mo(70),
+       dataw(7) => EX_Mo(71),
+       dataw(8) => EX_Mo(72),
+       dataw(9) => EX_Mo(73),
+       dataw(10) => EX_Mo(74),
+       dataw(11) => EX_Mo(75),
+       dataw(12) => EX_Mo(76),
+       dataw(13) => EX_Mo(77),
+       dataw(14) => EX_Mo(78),
+       dataw(15) => EX_Mo(79),
+       dataw(16) => EX_Mo(80),
+       dataw(17) => EX_Mo(81),
+       dataw(18) => EX_Mo(82),
+       dataw(19) => EX_Mo(83),
+       dataw(20) => EX_Mo(84),
+       dataw(21) => EX_Mo(85),
+       dataw(22) => EX_Mo(86),
+       dataw(23) => EX_Mo(87),
+       dataw(24) => EX_Mo(88),
+       dataw(25) => EX_Mo(89),
+       dataw(26) => EX_Mo(90),
+       dataw(27) => EX_Mo(91),
+       dataw(28) => EX_Mo(92),
+       dataw(29) => EX_Mo(93),
+       dataw(30) => EX_Mo(94),
+       dataw(31) => EX_Mo(95),
        endr(0) => Ex_Mo(32),
        endr(1) => Ex_Mo(33),
        endr(2) => Ex_Mo(34),
@@ -185,61 +173,20 @@ U1 : DMEM
        endw(29) => Ex_Mo(61),
        endw(30) => Ex_Mo(62),
        endw(31) => Ex_Mo(63),
-       datao => BUS60,
+       datao => BUS450,
        memread => cMO(1),
        memwrite => cMO(2)
   );
 
-U2 : M_WB
+U2 : M_WB3
   port map(
-       cWBc(0) => Dangling_Input_Signal,
-       cWBc(1) => cWBc(0),
-       cWBc(2) => cWBc(1),
-       cWBo(0) => DANGLING_U2_cWBo_0,
-       cWBo(1) => cWBo(0),
-       cWBo(2) => cWBo(1),
-       endw(0) => Ex_Mo(96),
-       endw(1) => Ex_Mo(97),
-       endw(2) => Ex_Mo(98),
-       endw(3) => Ex_Mo(99),
-       endw(4) => Ex_Mo(100),
        M_WBo => M_WBo,
-       PCin => PCin,
-       PCout => PCout,
-       regout(0) => Ex_Mo(64),
-       regout(1) => Ex_Mo(65),
-       regout(2) => Ex_Mo(66),
-       regout(3) => Ex_Mo(67),
-       regout(4) => Ex_Mo(68),
-       regout(5) => Ex_Mo(69),
-       regout(6) => Ex_Mo(70),
-       regout(7) => Ex_Mo(71),
-       regout(8) => Ex_Mo(72),
-       regout(9) => Ex_Mo(73),
-       regout(10) => Ex_Mo(74),
-       regout(11) => Ex_Mo(75),
-       regout(12) => Ex_Mo(76),
-       regout(13) => Ex_Mo(77),
-       regout(14) => Ex_Mo(78),
-       regout(15) => Ex_Mo(79),
-       regout(16) => Ex_Mo(80),
-       regout(17) => Ex_Mo(81),
-       regout(18) => Ex_Mo(82),
-       regout(19) => Ex_Mo(83),
-       regout(20) => Ex_Mo(84),
-       regout(21) => Ex_Mo(85),
-       regout(22) => Ex_Mo(86),
-       regout(23) => Ex_Mo(87),
-       regout(24) => Ex_Mo(88),
-       regout(25) => Ex_Mo(89),
-       regout(26) => Ex_Mo(90),
-       regout(27) => Ex_Mo(91),
-       regout(28) => Ex_Mo(92),
-       regout(29) => Ex_Mo(93),
-       regout(30) => Ex_Mo(94),
-       regout(31) => Ex_Mo(95),
+       cWBo => cWBc,
+       cWBo1 => cWBo,
        ckM_WB => ckM_WB,
-       dmout => BUS60
+       dmout => signed(BUS450( 31 downto 0 )),
+       endw => signed(Ex_Mo( 100 downto 96 )),
+       regout => signed(Ex_Mo( 95 downto 64 ))
   );
 
 pcsrc <= Zero and cMo(0);
@@ -281,9 +228,5 @@ pcsrc <= Zero and cMo(0);
 	NPCJ(8) <= EX_Mo(8);
 	NPCJ(9) <= EX_Mo(9);
 
-
----- Dangling input signal assignment ----
-
-Dangling_Input_Signal <= DANGLING_INPUT_CONSTANT;
 
 end mem2;

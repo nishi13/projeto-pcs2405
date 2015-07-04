@@ -1,11 +1,9 @@
 i<>.\src\mux5bits.bde
-i<>.\src\m_wb.vhd
 i<>.\src\icache.vhd
 i<>.\src\pc.vhd
 i<>.\src\wb.bde
 i<>.\src\mem.bde
 i<>.\src\ex_m.vhd
-i<>.\..\..\..\users\asua\documents\poli\setimo semestre\arquitetura\fwdarquivosarquitetura\m_wb.vhd
 i<>.\src\ri.vhd
 i<>.\src\uc1.vhd
 i<>.\src\soma4.vhd
@@ -21,3 +19,10 @@ i<>.\src\mem2.bde
 i<>.\src\cacheI.vhd
 i<>.\src\cacheD.vhd
 i<>.\src\memoriaprincipal.vhd
+i<>.\src\MWB.vhd
+i<>.\src\DOPA.bde
+i<>.\src\mwb3.bde
+i<>.\src\mwb3.vhd
+i<>.\src\mwb4.vhd
+i<>.\src\membw5.vhd
+i<>.\src\dmem2.vhd

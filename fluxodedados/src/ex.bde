@@ -2,7 +2,7 @@ SCHM0104
 
 HEADER
 {
- FREEID 2339
+ FREEID 2356
  VARIABLES
  {
   #ARCHITECTURE="EX"
@@ -2701,7 +2701,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  2322, 0, 0
+  TEXT  2339, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -2712,7 +2712,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  2323, 0, 0
+  TEXT  2340, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -2723,7 +2723,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  2324, 0, 0
+  TEXT  2341, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -2733,7 +2733,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  2325, 0, 0
+  TEXT  2342, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -2745,7 +2745,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  2326, 0, 0
+  TEXT  2343, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -2758,7 +2758,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  2327, 0, 0
+  TEXT  2344, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -2768,7 +2768,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  2328, 0, 0
+  TEXT  2345, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -2780,7 +2780,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  2329, 0, 0
+  TEXT  2346, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -2790,7 +2790,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  2330, 0, 0
+  TEXT  2347, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -2801,7 +2801,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  2331, 0, 0
+  GROUP  2348, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -2813,7 +2813,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  2332, 0, 0
+  GROUP  2349, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -2825,7 +2825,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  2333, 0, 0
+  GROUP  2350, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -2837,7 +2837,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  2334, 0, 0
+  GROUP  2351, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -2849,7 +2849,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  2335, 0, 0
+  GROUP  2352, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -2861,7 +2861,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  2336, 0, 0
+  GROUP  2353, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -2872,7 +2872,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  2337, 0, 0
+  GROUP  2354, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -2883,7 +2883,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  2338, 0, 0
+  BMPPICT  2355, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)
